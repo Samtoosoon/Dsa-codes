@@ -1,0 +1,22 @@
+#include <iostream>
+#include <limits>
+
+using namespace std;
+
+int main() {
+    cout << "Maximum values:\n";
+    cout << "int: " << numeric_limits<int>::max() << endl;
+    cout << "float: " << numeric_limits<float>::max() << endl;
+    cout << "double: " << numeric_limits<double>::max() << endl;
+    cout << "char: " << (int)numeric_limits<char>::max() << endl;
+    cout << "bool: " << boolalpha << true << endl;
+    
+    cout << "\nMinimum values:\n";
+    cout << "int: " << numeric_limits<int>::min() << endl;
+    cout << "float: " << -numeric_limits<float>::max() << endl;
+    cout << "double: " << -numeric_limits<double>::max() << endl;
+    cout << "char: " << (int)numeric_limits<char>::min() << endl;
+    cout << "bool: " << boolalpha << false << endl;
+
+    return 0;
+}
