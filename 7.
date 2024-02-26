@@ -1,0 +1,9 @@
+#include <iostream>
+#include <limits>
+using namespace std;
+
+int main() {
+    cout << "Minimum value of int: " << numeric_limits<int>::min() << endl;
+    cout << "Maximum value of int: " << numeric_limits<int>::max() << endl;
+    return 0;
+}
