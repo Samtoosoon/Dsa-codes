@@ -1,0 +1,65 @@
+#include <iostream>
+using namespace std;
+
+int find_maximum(int a, int b, int c) {
+    int max_num = a;
+    if (b > max_num) {
+        max_num = b;
+    }
+    if (c > max_num) {
+        max_num = c;
+    }
+    return max_num;
+}
+
+int find_minimum(int a, int b, int c) {
+    int min_num = a;
+    if (b < min_num) {
+        min_num = b;
+    }
+    if (c < min_num) {
+        min_num = c;
+    }
+    return min_num;
+}
+
+int main() {
+    int num1, num2, num3;
+    cout << "Enter first number: ";
+    cin >> num1;
+    cout << "Enter second number: ";
+    cin >> num2;
+    cout << "Enter third number: ";
+    cin >> num3;
+    cout << "Maximum: " << find_maximum(num1, num2, num3) << endl;
+    cout << "Minimum: " << find_minimum(num1, num2, num3) << endl;
+    return 0;
+}
+
+
+
+Using STL, 
+
+#include <iostream>
+using namespace std;
+
+int find_maximum(int a, int b, int c) {
+    return max({a, b, c});
+}
+
+int find_minimum(int a, int b, int c) {
+    return min({a, b, c});
+}
+
+int main() {
+    int num1, num2, num3;
+    cout << "Enter first number: ";
+    cin >> num1;
+    cout << "Enter second number: ";
+    cin >> num2;
+    cout << "Enter third number: ";
+    cin >> num3;
+    cout << "Maximum: " << find_maximum(num1, num2, num3) << endl;
+    cout << "Minimum: " << find_minimum(num1, num2, num3) << endl;
+    return 0;
+}
